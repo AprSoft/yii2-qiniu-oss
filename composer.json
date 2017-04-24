@@ -11,11 +11,13 @@
         }
     ],
     "require": {
-        "yiisoft/yii2": "*"
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "~2.0.5",
+        "qiniu/php-sdk": "*"
     },
     "autoload": {
         "psr-4": {
-            "AprSoft\\QiNiu\\OSS\\": ""
+            "AprSoft\\QiNiu\\OSS\\": "src"
         }
     }
 }
