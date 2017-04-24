@@ -1,0 +1,21 @@
+{
+    "name": "aprsoft/yii2-qiniu-oss",
+    "description": "yii2-qiniu-oss",
+    "type": "yii2-extension",
+    "keywords": ["yii2","qiniu","oss"],
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "zhangxinyu",
+            "email": "176956856@qq.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "AprSoft\\QiNiu\\OSS\\": ""
+        }
+    }
+}
