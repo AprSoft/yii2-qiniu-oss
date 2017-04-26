@@ -10,7 +10,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist aprsoft/yii2-qiniu-oss "*"
+composer require --prefer-dist aprsoft/yii2-qiniu-oss "*"
 ```
 
 or add
@@ -25,7 +25,22 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
-Once the extension is installed, simply use it in your code by  :
-
+web.php
 ```php
-<?= \AprSoft\QiNiu\OSS\AutoloadExample::widget(); ?>```
+'qiniuOssImage' => [
+    "class" => 'AprSoft\Aliyun\OSS\Image',
+    "accessKeyId" => 'xxxxxxxxxxxxxx',
+    "accessKeySecret" => 'xxxxxxxx',
+    "bucket" => 'xxxxx',
+],
+'qiniuOssBucket' => [
+    "class" => 'AprSoft\Aliyun\OSS\Bucket',
+    "accessKeyId" => 'xxxxxxx',
+    "accessKeySecret" => 'xxxxxx',
+],
+```
+代码中使用
+```php
+$bucket = Yii::$app->qiniuOssImage;
+$back = $bucket->list();
+```
